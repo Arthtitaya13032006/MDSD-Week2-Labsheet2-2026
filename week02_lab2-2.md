@@ -400,8 +400,9 @@ flutter run
 **✏️ ทดลองแก้ไข B:** เปลี่ยน `fontSize: 24` เป็น `fontSize: 48` บันทึกไฟล์และสังเกตผล
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
+
+<img width="1295" height="882" alt="image" src="https://github.com/user-attachments/assets/14d1784b-b049-444d-a042-301b913267f9" />
+
 ```
 ---
 
