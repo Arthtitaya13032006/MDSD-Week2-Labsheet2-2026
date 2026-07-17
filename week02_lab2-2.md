@@ -1458,21 +1458,20 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 
 | | หลัง Hot Reload |
 |--|--|
-| สี Theme | |
-| ค่า Counter | |
+| สี Theme |Teal (สีส้มอ่อน) |
+| ค่า Counter |15 (ค่าคงเดิม) |
 
 **ขั้นตอนที่ 5** กด **Hot Restart** (พิมพ์ `R` ใน Terminal หรือกด 🔄)
 
 | | หลัง Hot Restart |
 |--|--|
-| สี Theme | |
-| ค่า Counter | |
+| สี Theme |Teal (สีส้มอ่อน)  |
+| ค่า Counter |0 (รีเซ็ตกลับสู่ค่าเริ่มต้น) |
 
 **ขั้นตอนที่ 6** อธิบายผลลัพธ์:
 
-> Hot Reload: สี __________ Counter __________ เพราะ __________
-> Hot Restart: สี __________ Counter __________ เพราะ __________
-
+> Hot Reload: สี Teal (สีส้มอ่อน) Counter 15 (ค่าคงเดิม) เพราะ Flutter โหลดเฉพาะส่วน Widget ที่มีการแก้ไขใหม่ โดยไม่ทำลาย State เดิมของแอป
+> Hot Restart: สี Teal (สีส้มอ่อน)  Counter 0 (รีเซ็ตกลับสู่ค่าเริ่มต้น) เพราะ Flutter เริ่มการทำงานของแอปใหม่ทั้งหมด ทำให้ State ถูกสร้างใหม่และค่าตัวแปรเริ่มต้นถูกรีเซ็ต
 ---
 
 ### 🎯 โจทย์ฝึกทำ — ขยาย App ด้วยตนเอง
