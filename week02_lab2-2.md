@@ -458,6 +458,8 @@ flutter run
 ```
 
 **ขั้นตอนที่ 2** บันทึกและสังเกตผล
+<img width="1295" height="882" alt="image" src="https://github.com/user-attachments/assets/b7e63980-bc0e-4438-990c-bc6bd87e7d0f" />
+
 
 **✏️ ทดลองแก้ไข C:** เปลี่ยน `MainAxisAlignment.center` ของ Column เป็น `.start`, `.end`, `.spaceBetween`, `.spaceEvenly` ทีละอัน สังเกตการเปลี่ยนแปลง
 
