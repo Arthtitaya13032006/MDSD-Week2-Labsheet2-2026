@@ -879,9 +879,10 @@ class _GreetingFormState extends State<GreetingForm> {
 <img width="1323" height="496" alt="image" src="https://github.com/user-attachments/assets/7faf3b50-ee7f-4574-a515-ffceed3f3d06" />
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1322" height="425" alt="image" src="https://github.com/user-attachments/assets/60376efa-6e75-4406-8554-277d5cb800d6" />
+<img width="1326" height="413" alt="image" src="https://github.com/user-attachments/assets/902cb22c-f8d2-49df-9425-7c80d80d015a" />
+
 
 **✏️ ทดลองแก้ไข G:** ทดลองกดปุ่มโดยไม่กรอกชื่อ สังเกตว่า Error Message ปรากฏ และกดปุ่ม Reset (clear field) แล้วสังเกตว่า Error หายไป
 
