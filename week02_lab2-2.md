@@ -748,9 +748,9 @@ class _CounterSectionState extends State<CounterSection> {
 > **สิ่งที่เกิดขึ้น:** เมื่อไม่มี `setState()` ค่า `_count` เปลี่ยนในหน่วยความจำจริง แต่ Flutter ไม่รู้ว่าต้อง rebuild UI ทำให้หน้าจอยังแสดงค่าเดิม
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+
+<img width="1325" height="587" alt="image" src="https://github.com/user-attachments/assets/8613913e-6c61-4fa9-b966-1e0c7599e86f" />
+
 ---
 
 ### การทดลองที่ 5 — StatefulWidget: Form และ Text Input
