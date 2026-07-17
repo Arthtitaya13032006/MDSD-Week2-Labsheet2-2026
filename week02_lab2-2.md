@@ -596,9 +596,9 @@ class InfoCard extends StatelessWidget {
 **✏️ ทดลองแก้ไข E:** เพิ่ม `InfoCard` ที่ 4 แสดง "คณะ" ด้วยไอคอน `Icons.account_balance` สีแดง
 
 **บันทึกรูปผลการทดลอง**
-```
-บันทึกรูปที่นี่
-```
+<img width="1318" height="695" alt="image" src="https://github.com/user-attachments/assets/cd7c011a-7f01-4e66-9753-a3d18b4d5e04" />
+
+
 ---
 
 ### การทดลองที่ 4 — StatefulWidget: Counter
