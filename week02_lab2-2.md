@@ -1494,16 +1494,38 @@ colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
 ### คำถามท้ายใบงาน
 
 **ข้อ 1** ทำไม Flutter ถึงเลือกวาด UI ด้วย Engine ของตัวเองแทนการใช้ Native Component? มีข้อดีและข้อเสียอย่างไร?
+**คำตอบ**
+ข้อดี UI เหมือนกันทุกระบบ ,ทำงานเร็ว, ปรับแต่ง UI ได้มาก
+ข้อเสีย ขนาดแอปใหญ่กว่า,ใช้ทรัพยากรมากขึ้น,ต้องสร้างบาง Component เอง
 
 **ข้อ 2** อธิบายความสัมพันธ์ของ Widget Tree, Element Tree และ RenderObject Tree และเหตุผลที่ต้องมีทั้ง 3 ส่วน
+**คำตอบ**
+Widget Tree → โครงสร้าง UI ที่นักพัฒนาสร้าง
+Element Tree → ตัวเชื่อม Widget กับการทำงานจริง และจัดการ State
+RenderObject Tree → คำนวณ Layout และวาด UI บนหน้าจอ
 
-**ข้อ 3** อธิบายโครงสร้าง Widget Tree และความสัมพันธ์ระหว่าง Parent-Child Widget 
+**ข้อ 3** อธิบายโครงสร้าง Widget Tree และความสัมพันธ์ระหว่าง Parent-Child Widget
+**คำตอบ**
+Parent Widget คือ Widget ที่ครอบหรือควบคุม Widget อื่น เช่น กำหนดตำแหน่ง การจัดวาง หรือรูปแบบการแสดงผล
+Child Widget คือ Widget ที่อยู่ภายใน Parent และทำหน้าที่เป็นส่วนประกอบย่อยของ UI
 
 **ข้อ 4** จากการทดลองที่ 4 ข้อ F (ลบ setState ออก) ผลที่เกิดขึ้นคืออะไร และอธิบายเหตุผลเชิงเทคนิคว่าทำไมจึงเกิดผลนั้น
+**คำตอบ**
+เมื่อลบ setState() ค่าในตัวแปรเปลี่ยน แต่หน้าจอไม่เปลี่ยน เพราะ Flutter ไม่รู้ว่าข้อมูลเปลี่ยน จึงไม่ทำการ rebuild UI
 
 **ข้อ 5** เมื่อออกแบบ Flutter App ที่มี Widget หลายตัว จะตัดสินใจอย่างไรว่า Widget ไหนควรเป็น Stateless และ Widget ไหนควรเป็น Stateful? ยกตัวอย่างจากใบงานนี้
+**คำตอบ**
+tatelessWidget → ใช้กับ Widget ที่ข้อมูลไม่เปลี่ยน เช่น MyApp, DashboardPage
+StatefulWidget → ใช้กับ Widget ที่ข้อมูลเปลี่ยนได้ เช่น ClockWidget (เวลาเปลี่ยน), CounterSection (ค่าตัวเลขเปลี่ยน)
 
 **ข้อ 6** เหตุใดจึงต้องเรียก `dispose()` และยกเลิก Timer ใน `ClockWidget`? หากไม่ทำจะเกิดอะไรขึ้นในระยะยาว?
+**คำตอบ**
+ต้องใช้ dispose() เพื่อหยุด Timer และคืนทรัพยากร
+Timer ยังทำงานต่อ 
+เกิด Memory Leak
+อาจเกิด Error จากการเรียก setState() หลัง Widget ถูกลบไปแล้ว
+แอปอาจทำงานช้าลงในระยะยาว
+
 
 ---
 
