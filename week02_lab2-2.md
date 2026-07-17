@@ -876,6 +876,7 @@ class _GreetingFormState extends State<GreetingForm> {
 ```
 
 **ขั้นตอนที่ 3** บันทึกและทดสอบ — กรอกชื่อแล้วกดปุ่ม
+<img width="1323" height="496" alt="image" src="https://github.com/user-attachments/assets/7faf3b50-ee7f-4574-a515-ffceed3f3d06" />
 
 **บันทึกรูปผลการทดลอง**
 ```
